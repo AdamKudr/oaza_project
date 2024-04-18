@@ -11,33 +11,23 @@ import java.util.Scanner;
 
 public class LoadFromFile {
 
-    List<String> selectedPersonID = new ArrayList<>();
     List<String> personIDList = new ArrayList<>();
 
     public List<String> getPersonIDList() {
         return personIDList;
     }
 
-    public void loadPersonIDFromFile(List<String> personID) {
-        this.personIDList = personID;
+    public void setPersonIDList(List<String> personIDList) {
+        this.personIDList = personIDList;
     }
 
-    public List<String> getSelectedPersonID() {
-        return selectedPersonID;
-    }
-
-    public void setSelectedPersonID(List<String> selectedPersonID) {
-        this.selectedPersonID = selectedPersonID;
-    }
-
-    public List<String> loadPersonIDFromFile(String fileName) throws OazaException {
+    public void loadPersonIDFromFile(String fileName) throws OazaException {
 
         try (Scanner scanner = new Scanner(getClass().getResourceAsStream("/" + fileName))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 personIDList.add(line);
             }
-            return personIDList;
         } catch (NullPointerException e) {
             throw new OazaException("Soubor nenalezen");
         }

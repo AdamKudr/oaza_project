@@ -9,7 +9,6 @@ public class userModel {
     private String id;
     private String name;
     private String surname;
-
     private String personId;
     private String uuid;
 
