@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Adam\",\r\n    \"surname\":\"Kudr\",\r\n    \"personId\":\"qE3lY6uT0vKd\"\r\n}",
+					"raw": "{\r\n    \"name\":\"Adam\",\r\n    \"surname\":\"Kudr\",\r\n    \"personId\":\"hM5bZ8nK4aVf\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -39,7 +39,26 @@
 			"name": "Get user by Id",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/8?detail=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"8"
+					],
+					"query": [
+						{
+							"key": "detail",
+							"value": "true"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -47,7 +66,25 @@
 			"name": "Get all users",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/users?detail=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "detail",
+							"value": "true"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -56,6 +93,15 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"František\",\r\n    \"surname\":\"Kudr\",\r\n    \"id\":\"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "localhost:8080/api/v1/user",
 					"host": [
@@ -77,7 +123,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/v1/user",
+					"raw": "localhost:8080/api/v1/user/8",
 					"host": [
 						"localhost"
 					],
@@ -85,7 +131,8 @@
 					"path": [
 						"api",
 						"v1",
-						"user"
+						"user",
+						"8"
 					]
 				}
 			},

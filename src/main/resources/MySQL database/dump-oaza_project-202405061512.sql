@@ -31,7 +31,7 @@ CREATE TABLE `oaza_users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `oaza_users_unique_personid` (`personid`),
   UNIQUE KEY `oaza_users_unique_uuid` (`uuid`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `oaza_users` (
 
 LOCK TABLES `oaza_users` WRITE;
 /*!40000 ALTER TABLE `oaza_users` DISABLE KEYS */;
-INSERT INTO `oaza_users` VALUES (6,'Adam','Kudr','qE3lY6uT0vKd','df4e87ce-995b-4114-ae91-ca8e26cfc415'),(7,'Petr','Čech','gT4cR7wS0lVx','bc66e7cc-77c8-4491-9a2c-6eea8c2c9ffa');
+INSERT INTO `oaza_users` VALUES (8,'František','Kudr','qE3lY6uT0vKd','da8a2311-0255-4b30-886b-36ca787e5e14'),(10,'Adam','Kudr','hM5bZ8nK4aVf','3f6e2c4d-7f35-4118-b136-7df50edd4df3');
 /*!40000 ALTER TABLE `oaza_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-18 10:16:42
+-- Dump completed on 2024-05-06 15:12:56
