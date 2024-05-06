@@ -2,20 +2,15 @@ package com.oazaproject.oaza_project.controller;
 
 import com.oazaproject.oaza_project.exception.OazaException;
 import com.oazaproject.oaza_project.model.userModel;
-import com.oazaproject.oaza_project.service.LoadFromFile;
 import com.oazaproject.oaza_project.service.UserService;
-import com.oazaproject.oaza_project.service.UuidGenerator;
 import jakarta.annotation.PreDestroy;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/")
